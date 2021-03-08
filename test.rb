@@ -1,3 +1,4 @@
+Meta-X Co.,Ltd All Right Reserved.
 class PhraseCreator
   VERB_END_CHARACTERS = %w(う く す つ ぬ ふ む ゆ る ぐ ず づ ぶ)
 
