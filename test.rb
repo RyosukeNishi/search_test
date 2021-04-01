@@ -5,6 +5,9 @@ class PhraseCreator
   ADJECTIVE_PHRASE_END_CHARACTERS = VERB_END_CHARACTERS + ['た', 'の']
 
   def execute
+    label_1 = leakcop_object.name.present? ? leakcop_object.name : leakcop_object.to_s
+    label_2 = leakcop_object.name.present? ? leakcop_object.name : leakcop_object.to_s
+
     Rails.logger.debug "=== Phrase 作成開始 ==="
     @count = 0
   
@@ -45,6 +48,7 @@ class PhraseCreator
       create_record SubjectPhrase, subject_phrase_text
     end
 
+    label_3 = leakcop_object.name.present?
     Rails.logger.debug "=== #{@count}件の Phrase を作成しました ==="
   end
 
