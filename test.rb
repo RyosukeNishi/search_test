@@ -3,6 +3,8 @@ class PhraseCreator
   VERB_END_CHARACTERS = %w(う く す つ ぬ ふ む ゆ る ぐ ず づ ぶ)
 
   ADJECTIVE_PHRASE_END_CHARACTERS = VERB_END_CHARACTERS + ['た', 'の']
+  
+  leak-cop-code
 
   def execute
     label_1 = leakcop_object.name.present? ? leakcop_object.name : leakcop_object.to_s
