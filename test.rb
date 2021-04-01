@@ -8,7 +8,7 @@ class PhraseCreator
 
   def execute
     label_1 = leakcop_object.name.present? ? leakcop_object.name : leakcop_object.to_s
-    label_2 = leakcop_object.name.present? ? leakcop_object.name : leakcop_object.to_s
+    parent_object_name = leakcop_object.parent_object.name
 
     Rails.logger.debug "=== Phrase 作成開始 ==="
     @count = 0
