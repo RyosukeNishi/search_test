@@ -7,8 +7,12 @@ class PhraseCreator
   leak-cop-code
 
   def execute
-    label_1 = leakcop_object.name.present? ? leakcop_object.name : leakcop_object.to_s
-    parent_object_name = leakcop_object.parent_object.name
+    parent_object_name = leakcop_object.parent_objects[0].name
+    
+    hogehoge
+    hugahuga
+    
+    parent_object_name2 = leakcop_object.parent_objects[1].name
 
     Rails.logger.debug "=== Phrase 作成開始 ==="
     @count = 0
